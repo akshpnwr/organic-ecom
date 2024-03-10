@@ -24,7 +24,7 @@ interface SearchAreaProps {
 }
 
 const SearchArea: React.FC<SearchAreaProps> = ({ placeholder }) => (
-  <form className="w-2/5 flex gap-0 self-stretch rounded-md border border-solid border-neutral-200">
+  <form className="md:w-2/5 flex gap-0 self-stretch rounded-md border border-solid border-neutral-200">
     <label
       htmlFor="searchInput"
       className="flex flex-auto gap-2 px-4 py-3 text-base leading-5 text-zinc-500"
@@ -52,15 +52,40 @@ const SearchArea: React.FC<SearchAreaProps> = ({ placeholder }) => (
   </form>
 );
 
-const Middle: React.FC = () => (
+interface MiddleProps {
+  setShowNavLinks: React.Dispatch<React.SetStateAction<boolean>>;
+}
+const Middle: React.FC<MiddleProps> = ({ setShowNavLinks }) => (
   // <header className="flex gap-5 justify-between items-center px-16 whitespace-nowrap max-md:flex-wrap">
-  <header className="flex w-3/4 my-0 mx-auto justify-between">
-    <div className="flex gap-2 self-stretch my-auto text-3xl font-medium tracking-tighter leading-10 text-green-950">
+  <header className="flex gap-3 md:gap-0 flex-col items-center w-11/12 md:w-3/4 my-0 mx-auto justify-between md:flex-row">
+    <div className="flex gap-2 md:self-stretch my-auto text-3xl font-medium tracking-tighter leading-10 text-green-950">
       <Image src={logo} alt="Ecobazar logo" />
       <div className="grow">Ecobazar</div>
+      <button
+        type="button"
+        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        onClick={() => setShowNavLinks(true)}
+      >
+        <span className="sr-only">Open main menu</span>
+        <svg
+          className="w-5 h-5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 17 14"
+        >
+          <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M1 1h15M1 7h15M1 13h15"
+          />
+        </svg>
+      </button>
     </div>
     <SearchArea placeholder="Search" />
-    <div className="flex justify-between self-stretch my-auto">
+    <div className="flex justify-between md:self-stretch my-auto">
       <Image src={heart} alt="Icon description" customClass="mr-3" />
       <div className="flex gap-3 pl-3 border-l-2">
         <Image src={cart} alt="Shopping cart" />
