@@ -17,7 +17,7 @@ export default {
       },
       dropShadow: {
         'custom': '0 6px 5px #979797',
-      }
+      },
     },
   },
   plugins: [],

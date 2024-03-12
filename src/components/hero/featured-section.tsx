@@ -33,7 +33,7 @@ const features = [
 ];
 
 const FeatureSection: React.FC = () => (
-  <section className="md:w-3/4 md:mx-auto md:relative md:bottom-16 justify-between p-0 md:p-10 bg-white rounded-md shadow-2xl max-md:px-5">
+  <section className="md:w-3/4 md:mx-auto md:relative md:bottom-16 justify-between pb-10 md:p-10 bg-white rounded-md shadow-2xl max-md:px-5">
     <div className="flex gap-5 max-md:flex-col max-md:gap-0">
       {features.map((feature, index) => (
         <Feature
