@@ -14,6 +14,9 @@ export default {
       },
       animation: {
         slide: 'slide 0.3s ease-in-out',
+      },
+      dropShadow: {
+        'custom': '0 6px 5px #979797',
       }
     },
   },

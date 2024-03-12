@@ -10,7 +10,10 @@ const Navigation: React.FC = () => {
     <div className="flex flex-col gap-4">
       <Top />
       <Middle setShowNavLinks={setShowNavLinks} />
-      {showNavLinks && <NavLinks isNavLinkVisible={showNavLinks} />}
+      <NavLinks
+        isNavLinkVisible={showNavLinks}
+        setShowNavLinks={setShowNavLinks}
+      />
     </div>
   );
 };
