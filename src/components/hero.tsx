@@ -1,6 +1,6 @@
 import React from "react";
-import heroImage from "../../assets/hero-image.png";
-import rightArrow from "../../assets/right-arrow.svg";
+import heroImage from "../assets/hero-image.png";
+import rightArrow from "../assets/right-arrow.svg";
 
 type ImageProps = {
   src: string;
@@ -25,7 +25,7 @@ const ImageComponent: React.FC<ImageProps> = ({
 
 export const Hero: React.FC = () => {
   return (
-    <section className="flex flex-col my-5 md:mx-32 md:border md:drop-shadow-custom border-black justify-center px-4 py-8 rounded-lg bg-zinc-100 md:px-16 md:py-32">
+    <section className="flex flex-col mt-5 md:mx-32 md:border md:drop-shadow-custom border-black justify-center px-4 py-8 rounded-lg bg-zinc-100 md:px-16 md:py-32">
       <header className=" ml-4 md:ml-0 md:max-w-full">
         <div className="flex flex-col gap-5 md:flex-row md:gap-0">
           <div className="flex flex-col w-full md:w-1/2 md:ml-0">
