@@ -1,6 +1,7 @@
 import FeaturedProducts from "./components/featured-products/featured-products";
 import Hero from "./components/hero/hero";
 import Navigation from "./components/navigation/navigation";
+import Testimonial from "./components/testimonial";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navigation />
       <Hero />
       <FeaturedProducts />
+      <Testimonial />
     </div>
   );
 }
