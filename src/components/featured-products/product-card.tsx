@@ -1,5 +1,5 @@
 import React from "react";
-import shoppingBag from "../../assets/add-to-cart.svg";
+import shoppingBag from "../../assets/images/add-to-cart.svg";
 import { Product } from "../../types";
 
 interface ProductCardProps {

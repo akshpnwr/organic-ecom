@@ -1,6 +1,6 @@
 import React from "react";
-import heroImage from "../../assets/hero-image.png";
-import rightArrow from "../../assets/right-arrow.svg";
+import heroImage from "../../assets/images/hero-image.png";
+import rightArrow from "../../assets/images/right-arrow.svg";
 import FeatureSection from "./featured-section";
 
 type ImageProps = {

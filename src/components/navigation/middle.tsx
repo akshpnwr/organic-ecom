@@ -1,8 +1,8 @@
 import * as React from "react";
-import logo from "../../assets/logo.svg";
-import search from "../../assets/search.svg";
-import heart from "../../assets/heart.svg";
-import cart from "../../assets/cart.svg";
+import logo from "../../assets/images/logo.svg";
+import search from "../../assets/images/search.svg";
+import heart from "../../assets/images/heart.svg";
+import cart from "../../assets/images/cart.svg";
 
 interface ImageProps {
   src: string;

@@ -1,5 +1,5 @@
 import React from "react";
-import cancelUrl from "../../assets/cancel.svg";
+import cancelUrl from "../../assets/images/cancel.svg";
 
 interface NavLinksProps {
   isNavLinkVisible: boolean;

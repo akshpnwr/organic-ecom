@@ -1,9 +1,9 @@
 import React from "react";
 import Feature from "./feature";
-import deliveryTruck from "../../assets/delivery-truck.svg";
-import payment from "../../assets/package.svg";
-import headphones from "../../assets/headphones.svg";
-import shoppingBag from "../../assets/shopping-bag.svg";
+import deliveryTruck from "../../assets/images/delivery-truck.svg";
+import payment from "../../assets/images/package.svg";
+import headphones from "../../assets/images/headphones.svg";
+import shoppingBag from "../../assets/images/shopping-bag.svg";
 
 const features = [
   {

@@ -1,8 +1,9 @@
 import ProductCard from "./product-card";
-import appleImg from "../../assets/products/apple.png";
-import startYellowImg from "../../assets/star-yellow.svg";
-import banner from "../../assets/featured-products-banner.png";
+import appleImg from "../../assets/images/products/apple.png";
+import startYellowImg from "../../assets/images/star-yellow.svg";
+import banner from "../../assets/images/featured-products-banner.png";
 import { Product } from "../../types";
+import underline from "../../assets/images/underline.svg";
 
 const products: Product[] = [
   {
@@ -70,6 +71,7 @@ const FeaturedProducts: React.FC = () => {
       <h1 className="font-bold text-center md:text-4xl text-zinc-900">
         Featured Products
       </h1>
+      <img src={underline} className="m-auto" alt="" />
       <section className="mt-10 grid grid-cols-2 gap-2 mx-4 justify-items-center sm:grid-cols-2 md:grid-cols-5 md:gap-3">
         {products.map((product) => (
           <ProductCard
