@@ -86,7 +86,7 @@ const FeaturedProducts: React.FC = () => {
         <FeaturedProductsSubSection title="Hot Deals" products={products} />
         <FeaturedProductsSubSection title="Best Seller" products={products} />
         <FeaturedProductsSubSection title="Top Rated" products={products} />
-        <div className="my-0 mx-auto">
+        <div className="my-0 mx-auto hover:scale-105 transition duration-200 ease-in">
           <img src={banner} alt="" />
         </div>
       </section>

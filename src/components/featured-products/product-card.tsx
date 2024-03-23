@@ -12,7 +12,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, direction }) => {
     <article
       className={`flex ${
         direction == "vertical" ? "flex-row" : "flex-col"
-      } whitespace-nowrap bg-white rounded-lg border border-solid border-neutral-200 leading-[150%] md:max-w-[248px]`}
+      } whitespace-nowrap bg-white rounded-lg border border-solid border-neutral-200 leading-[150%] md:max-w-[248px] hover:border-1 hover:border-green-400 hover:shadow-sm hover:shadow-green-500`}
     >
       <img
         src={product.imageUrl}

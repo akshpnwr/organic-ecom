@@ -15,10 +15,22 @@ function App() {
       <Hero />
       <FeaturedProducts />
       <TopCategory />
-      <div className="px-4 my-0 mx-auto py-10 md:px-0 flex flex-col justify-center md:flex-row gap-10 ">
-        <img className="w-[23%] hover:scale-105" src={banner1} alt="" />
-        <img className="w-[23%] hover:scale-105" src={banner2} alt="" />
-        <img className="w-[23%] hover:scale-105" src={banner3} alt="" />
+      <div className="px-4 my-0 mx-auto py-10 md:px-0 flex flex-col items-center justify-center md:flex-row gap-10 ">
+        <img
+          className="w-4/5 md:w-[23%] hover:scale-105 transition duration-200 ease-in"
+          src={banner1}
+          alt=""
+        />
+        <img
+          className="w-4/5 md:w-[23%] hover:scale-105 transition duration-200 ease-in"
+          src={banner2}
+          alt=""
+        />
+        <img
+          className="w-4/5 md:w-[23%] hover:scale-105 transition duration-200 ease-in"
+          src={banner3}
+          alt=""
+        />
       </div>
       <Testimonial />
       <Footer />

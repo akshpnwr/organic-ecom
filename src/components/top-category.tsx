@@ -12,26 +12,6 @@ interface TopCategoryCardProps {
   productCount: number;
 }
 
-const TopCategoryCard: React.FC<TopCategoryCardProps> = ({
-  imageUrl,
-  title,
-  productCount,
-}) => {
-  return (
-    <article className="w-full flex flex-col py-7 text-center bg-white rounded-md border border-gray-300 border-solid leading-[150%] max-w-[200px]">
-      <img
-        src={imageUrl}
-        alt={title}
-        className="self-center w-20 aspect-square"
-      />
-      <h3 className="mt-5 w-full text-lg font-medium text-zinc-900">{title}</h3>
-      <p className="mt-1.5 w-full text-sm text-zinc-500">
-        {productCount} Products
-      </p>
-    </article>
-  );
-};
-
 const categories = [
   {
     imageUrl: vegetableImgUrl,
@@ -64,6 +44,26 @@ const categories = [
     productCount: 165,
   },
 ];
+
+const TopCategoryCard: React.FC<TopCategoryCardProps> = ({
+  imageUrl,
+  title,
+  productCount,
+}) => {
+  return (
+    <article className="w-full flex flex-col py-7 text-center bg-white rounded-md border border-gray-300 border-solid leading-[150%] max-w-[200px] hover:border-1 hover:border-green-400 hover:shadow-sm hover:shadow-green-500">
+      <img
+        src={imageUrl}
+        alt={title}
+        className="self-center w-20 aspect-square"
+      />
+      <h3 className="mt-5 w-full text-lg font-medium text-zinc-900">{title}</h3>
+      <p className="mt-1.5 w-full text-sm text-zinc-500">
+        {productCount} Products
+      </p>
+    </article>
+  );
+};
 
 const TopCategory: React.FC = () => {
   return (
