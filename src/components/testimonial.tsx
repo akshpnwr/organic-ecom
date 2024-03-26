@@ -33,7 +33,7 @@ const Testimonial = () => {
   };
 
   return (
-    <section className="bg-[#EDF2EE]">
+    <section className="bg-[#EDF2EE] overflow-hidden">
       <div className="mx-auto max-w-[1340px] px-4 py-12 sm:px-6">
         <div className="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8">
           <h2 className="max-w-xl text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">
