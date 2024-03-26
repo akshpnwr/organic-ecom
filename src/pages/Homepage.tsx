@@ -1,7 +1,5 @@
 import FeaturedProducts from "../components/featured-products/featured-products";
-import Footer from "../components/footer";
 import Hero from "../components/hero/hero";
-import Navigation from "../components/navigation/navigation";
 import Testimonial from "../components/testimonial";
 import TopCategory from "../components/top-category";
 import banner1 from "../assets/images/homepage-ad-banner-1.png";
@@ -19,7 +17,6 @@ import underline from "../assets/images/underline.svg";
 const Homepage: React.FC = () => {
   return (
     <div>
-      <Navigation />
       <Hero />
       <FeaturedProducts />
       <TopCategory />
@@ -82,7 +79,6 @@ const Homepage: React.FC = () => {
           />
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

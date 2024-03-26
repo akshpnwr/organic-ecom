@@ -1,10 +1,13 @@
+import Layout from "./components/layout";
+import AboutUs from "./pages/About-us";
 import Homepage from "./pages/Homepage";
 
 function App() {
   return (
-    <div>
-      <Homepage />
-    </div>
+    <Layout>
+      {/* <Homepage /> */}
+      <AboutUs />
+    </Layout>
   );
 }
 
