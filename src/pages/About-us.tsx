@@ -1,9 +1,10 @@
 import image1 from "../assets/images/about-us/image-1.png";
 import image2 from "../assets/images/about-us/image-2.png";
 import image3 from "../assets/images/about-us/image-3.png";
+import teamMember1 from "../assets/images/about-us/team-member-1.png";
 
-import * as React from "react";
 import Testimonial from "../components/testimonial";
+import Slider from "../components/slider";
 
 interface BenefitProps {
   iconSrc: string;
@@ -227,6 +228,101 @@ const AboutUs = () => {
           />
         </div>
       </section>
+      {/* Our team section */}
+      <div className="my-14">
+        <div className="w-1/2 my-0 mx-auto text-center">
+          <h2 className="text-5xl font-semibold leading-[57.6px] text-zinc-900 max-md:max-w-full max-md:text-4xl">
+            Our Awesome Team
+          </h2>
+          <p className="mt-3 w-full text-base leading-6 text-stone-500 max-md:max-w-full">
+            Pellentesque a ante vulputate leo porttitor luctus sed eget eros.
+            Nulla et rhoncus neque. Duis non diam eget est luctus tincidunt a a
+            mi.
+          </p>
+        </div>
+        <Slider>
+          <div className="md:m-4 max-w-sm rounded overflow-hidden shadow-lg">
+            <img
+              className="w-full"
+              src={teamMember1}
+              alt="Sunset in the mountains"
+            />
+            <div className="p-1 md:px-4 md:py-4">
+              <div className="font-bold text-sm md:text-lg mb-1">
+                Jane Cooper
+              </div>
+              <p className="text-gray-700 text-xs">Worker</p>
+            </div>
+          </div>
+          <div className="md:m-4 max-w-sm rounded overflow-hidden shadow-lg">
+            <img
+              className="w-full"
+              src={teamMember1}
+              alt="Sunset in the mountains"
+            />
+            <div className="p-1 md:px-4 md:py-4">
+              <div className="font-bold text-sm md:text-lg mb-1">
+                Jane Cooper
+              </div>
+              <p className="text-gray-700 text-xs">Worker</p>
+            </div>
+          </div>
+          <div className="md:m-4 max-w-sm rounded overflow-hidden shadow-lg">
+            <img
+              className="w-full"
+              src={teamMember1}
+              alt="Sunset in the mountains"
+            />
+            <div className="p-1 md:px-4 md:py-4">
+              <div className="font-bold text-sm md:text-lg mb-1">
+                Jane Cooper
+              </div>
+              <p className="text-gray-700 text-xs">Worker</p>
+            </div>
+          </div>
+          <div className="md:m-4 max-w-sm rounded overflow-hidden shadow-lg">
+            <img
+              className="w-full"
+              src={teamMember1}
+              alt="Sunset in the mountains"
+            />
+            <div className="p-1 md:px-4 md:py-4">
+              <div className="font-bold text-sm md:text-lg mb-1">
+                Jane Cooper
+              </div>
+              <p className="text-gray-700 text-xs">Worker</p>
+            </div>
+          </div>
+          <div className="md:m-4 max-w-sm rounded overflow-hidden shadow-lg">
+            <img
+              className="w-full"
+              src={teamMember1}
+              alt="Sunset in the mountains"
+            />
+            <div className="p-1 md:px-4 md:py-4">
+              <div className="font-bold text-sm md:text-lg mb-1">
+                Jane Cooper
+              </div>
+              <p className="text-gray-700 text-xs">Worker</p>
+            </div>
+          </div>{" "}
+          <div className="md:m-4 max-w-sm rounded overflow-hidden shadow-lg">
+            <img
+              className="w-full"
+              src={teamMember1}
+              alt="Sunset in the mountains"
+            />
+            <div className="p-1 md:px-4 md:py-4">
+              <div className="font-bold text-sm md:text-lg mb-1">
+                Jane Cooper
+              </div>
+              <p className="text-gray-700 text-xs">Worker</p>
+            </div>
+          </div>
+        </Slider>
+      </div>
+      {/* Testimonial */}
+      <Testimonial />
       {/* section 5 */}
       <section className="flex gap-5 mx-4 md:w-5/6 md:mx-auto my-0 justify-between py-12 md:py-20 max-md:flex-wrap">
         {companyImages.map((image, index) => (
@@ -239,8 +335,6 @@ const AboutUs = () => {
           />
         ))}
       </section>
-      {/* Testimonial */}
-      <Testimonial />
     </div>
   );
 };
