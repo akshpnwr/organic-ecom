@@ -105,7 +105,7 @@ const AboutUs = () => {
     <div>
       {/* section 1 */}
       <section className="flex gap-5 max-md:flex-col max-md:gap-0 md:max-w-[1300px] md:my-16 md:mx-auto">
-        <div className="flex flex-col w-[45%] max-md:ml-0 max-md:w-full">
+        <div className="px-5 flex flex-col w-[45%] max-md:ml-0 max-md:w-full">
           <div className="flex flex-col self-stretch my-auto max-md:mt-10 max-md:max-w-full">
             <h1 className="text-5xl font-semibold leading-[60px] text-zinc-900 max-md:max-w-full max-md:text-4xl max-md:leading-[54px]">
               100% Trusted Organic Food Store
@@ -251,7 +251,7 @@ const AboutUs = () => {
               <div className="font-bold text-sm md:text-lg mb-1">
                 Jane Cooper
               </div>
-              <p className="text-gray-700 text-xs">Worker</p>
+              <p className="text-gray-700 text-xs md:text-sm">Worker</p>
             </div>
           </div>
           <div className="md:m-4 max-w-sm rounded overflow-hidden shadow-lg">
@@ -264,7 +264,7 @@ const AboutUs = () => {
               <div className="font-bold text-sm md:text-lg mb-1">
                 Jane Cooper
               </div>
-              <p className="text-gray-700 text-xs">Worker</p>
+              <p className="text-gray-700 text-xs md:text-sm">Worker</p>
             </div>
           </div>
           <div className="md:m-4 max-w-sm rounded overflow-hidden shadow-lg">
@@ -277,7 +277,7 @@ const AboutUs = () => {
               <div className="font-bold text-sm md:text-lg mb-1">
                 Jane Cooper
               </div>
-              <p className="text-gray-700 text-xs">Worker</p>
+              <p className="text-gray-700 text-xs md:text-sm">Worker</p>
             </div>
           </div>
           <div className="md:m-4 max-w-sm rounded overflow-hidden shadow-lg">
@@ -290,7 +290,7 @@ const AboutUs = () => {
               <div className="font-bold text-sm md:text-lg mb-1">
                 Jane Cooper
               </div>
-              <p className="text-gray-700 text-xs">Worker</p>
+              <p className="text-gray-700 text-xs md:text-sm">Worker</p>
             </div>
           </div>
           <div className="md:m-4 max-w-sm rounded overflow-hidden shadow-lg">
@@ -303,7 +303,7 @@ const AboutUs = () => {
               <div className="font-bold text-sm md:text-lg mb-1">
                 Jane Cooper
               </div>
-              <p className="text-gray-700 text-xs">Worker</p>
+              <p className="text-gray-700 text-xs md:text-sm">Worker</p>
             </div>
           </div>{" "}
           <div className="md:m-4 max-w-sm rounded overflow-hidden shadow-lg">
@@ -316,7 +316,7 @@ const AboutUs = () => {
               <div className="font-bold text-sm md:text-lg mb-1">
                 Jane Cooper
               </div>
-              <p className="text-gray-700 text-xs">Worker</p>
+              <p className="text-gray-700 text-xs md:text-sm">Worker</p>
             </div>
           </div>
         </Slider>
