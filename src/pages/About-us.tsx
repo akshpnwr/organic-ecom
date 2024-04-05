@@ -5,6 +5,7 @@ import teamMember1 from "../assets/images/about-us/team-member-1.png";
 
 import Testimonial from "../components/testimonial";
 import Slider from "../components/slider";
+import Button from "../components/UI/Button";
 
 interface BenefitProps {
   iconSrc: string;
@@ -208,15 +209,14 @@ const AboutUs = () => {
               </div>
             </div>
 
-            <button className="flex gap-4 justify-center self-start px-6 py-2 mt-8 text-sm font-semibold leading-5 text-white bg-green-600 rounded-[43px] max-md:px-5">
-              <span>Shop Now</span>
+            <Button text="Shop Now" classes="flex gap-4 self-start">
               <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/4479b5fcd8806024af03a919fdc52e70085f0c2c8f9acab5119fdbdc61350308?apiKey=bbddd5bf435648a288c40d6f8ca6b85c&"
                 alt=""
                 className="shrink-0 my-auto aspect-[1.15] w-[15px]"
               />
-            </button>
+            </Button>
           </section>
         </div>
         <div className="flex flex-col w-[55%] max-md:ml-0 max-md:w-full">

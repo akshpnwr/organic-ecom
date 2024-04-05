@@ -2,27 +2,7 @@ import React from "react";
 import heroImage from "../../assets/images/hero-image.png";
 import rightArrow from "../../assets/images/right-arrow.svg";
 import FeatureSection from "./featured-section";
-
-type ImageProps = {
-  src: string;
-  alt: string;
-  className?: string;
-  isDecorative?: boolean;
-};
-
-const ImageComponent: React.FC<ImageProps> = ({
-  src,
-  alt,
-  className,
-  isDecorative = false,
-}) => (
-  <img
-    src={src}
-    alt={isDecorative ? "" : alt}
-    className={className}
-    loading="lazy"
-  />
-);
+import Button from "../UI/Button";
 
 export const Hero: React.FC = () => {
   return (
@@ -45,21 +25,23 @@ export const Hero: React.FC = () => {
                 <p className="mt-3 text-sm leading-5 font-extralight text-zinc-400">
                   Free shipping on all your order. we deliver, you enjoy
                 </p>
-                <button className="flex gap-4 justify-center px-5 py-3 mt-6 md:mt-8 text-base leading-5 text-white bg-green-600 rounded-[53px] md:px-10 md:py-5">
-                  <span>Shop now</span>
-                  <ImageComponent
+                {/* <button className="flex gap-4 justify-center px-5 py-3 mt-6 md:mt-8 text-base leading-5 text-white bg-green-600 rounded-[53px] md:px-10 md:py-5"> */}
+                <Button text="Shop now" classes="flex gap-4 justify-center">
+                  <img
                     src={rightArrow}
                     alt="Arrow Right"
                     className="shrink-0 self-start aspect-[1.15] w-[25px]"
+                    loading="lazy"
                   />
-                </button>
+                </Button>
               </div>
             </div>
             <div className="w-full md:w-1/2">
-              <ImageComponent
+              <img
                 src={heroImage}
                 alt="Fresh Organic Foods"
                 className="object-cover inset-0 w-full h-full"
+                loading="lazy"
               />
             </div>
           </div>
