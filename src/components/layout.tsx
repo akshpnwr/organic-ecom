@@ -1,12 +1,12 @@
-import { ReactNode } from "react";
 import Footer from "./footer";
 import Navigation from "./navigation/navigation";
+import { Outlet } from "react-router-dom";
 
-const Layout: React.FC<{ children: ReactNode }> = ({ children }) => {
+const Layout: React.FC = () => {
   return (
     <>
       <Navigation />
-      {children}
+      <Outlet />
       <Footer />
     </>
   );
