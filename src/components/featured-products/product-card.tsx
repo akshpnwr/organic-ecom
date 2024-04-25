@@ -1,5 +1,7 @@
-import React from "react";
-import shoppingBag from "../../assets/images/add-to-cart.svg";
+import React, { useState } from "react";
+import cartGray from "../../assets/images/add-to-cart.svg";
+import cartGreen from "../../assets/images/cart-green.svg";
+
 import { Product } from "../../types";
 
 interface ProductCardProps {
@@ -8,11 +10,15 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product, direction }) => {
+  const [isHovering, setIsHovering] = useState(false);
+
   return (
     <article
       className={`flex ${
         direction == "vertical" ? "flex-row" : "flex-col"
-      } whitespace-nowrap bg-white rounded-lg border border-solid border-neutral-200 cursor-pointer leading-[150%] md:max-w-[248px] hover:border-1 hover:border-green-400 hover:shadow-sm hover:shadow-green-500`}
+      } whitespace-nowrap p-1 bg-white rounded-lg border border-solid border-neutral-200 cursor-pointer leading-[150%] md:max-w-[248px] hover:border-1 hover:border-green-400 hover:shadow-sm hover:shadow-green-500`}
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
     >
       <img
         src={product.imageUrl}
@@ -55,7 +61,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, direction }) => {
         </div>
         {direction == "horizontal" && (
           <div className="flex mr-3 w-1/4">
-            <img src={shoppingBag} alt="" />
+            {isHovering ? (
+              <img src={cartGreen} alt="" />
+            ) : (
+              <img src={cartGray} alt="" />
+            )}
           </div>
         )}
       </div>

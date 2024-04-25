@@ -40,7 +40,7 @@ export const Hero: React.FC = () => {
               <img
                 src={heroImage}
                 alt="Fresh Organic Foods"
-                className="object-cover inset-0 w-full h-full"
+                className="object-cover inset-0 w-full h-full hover:-translate-y-4 transition-transform duration-200 ease-in-out"
                 loading="lazy"
               />
             </div>

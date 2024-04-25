@@ -13,6 +13,7 @@ import post5 from "../assets/images/instagram-posts/post-5.png";
 import post6 from "../assets/images/instagram-posts/post-6.png";
 
 import underline from "../assets/images/underline.svg";
+import ImageWithPlaceholder from "../components/UI/ImageWithPlaceholder";
 
 const Homepage: React.FC = () => {
   return (
@@ -22,21 +23,21 @@ const Homepage: React.FC = () => {
       <TopCategory />
 
       {/* Adverstisement section */}
-      <div className="px-4 my-0 mx-auto py-10 md:px-0 flex flex-col items-center justify-center md:flex-row gap-10 ">
-        <img
-          className="w-4/5 md:w-[23%] hover:scale-105 transition duration-200 ease-in"
+      <div className="px-4 my-0 mx-auto py-10 md:px-48 flex flex-col items-center justify-center md:flex-row gap-10 ">
+        <ImageWithPlaceholder
           src={banner1}
           alt=""
+          className="h-[300px] md:h-[450px] hover:scale-105 transition duration-200 ease-in"
         />
-        <img
-          className="w-4/5 md:w-[23%] hover:scale-105 transition duration-200 ease-in"
+        <ImageWithPlaceholder
           src={banner2}
           alt=""
+          className="h-[300px] md:h-[450px] hover:scale-105 transition duration-200 ease-in"
         />
-        <img
-          className="w-4/5 md:w-[23%] hover:scale-105 transition duration-200 ease-in"
+        <ImageWithPlaceholder
           src={banner3}
           alt=""
+          className="h-[300px] md:h-[450px] hover:scale-105 transition duration-200 ease-in"
         />
       </div>
       <Testimonial />
@@ -46,37 +47,67 @@ const Homepage: React.FC = () => {
           Follow us on Instagram
         </h1>
         <img src={underline} className="m-auto mt-4" alt="" />
-        <div className="grid mt-8 grid-cols-2 justify-items-center gap-y-10 md:flex md:gap-x-4">
-          <img
+        <div className="grid mt-8 grid-cols-2 px-4 md:px-0 justify-items-center gap-4 md:flex md:gap-x-4">
+          <ImageWithPlaceholder
+            src={post1}
+            alt=""
+            className="h-[150px] md:h-[180px] hover:scale-105 transition duration-200 ease-in"
+          />
+          <ImageWithPlaceholder
+            src={post2}
+            alt=""
+            className="h-[150px] md:h-[180px] hover:scale-105 transition duration-200 ease-in"
+          />{" "}
+          <ImageWithPlaceholder
+            src={post3}
+            alt=""
+            className="h-[150px] md:h-[180px] hover:scale-105 transition duration-200 ease-in"
+          />
+          <ImageWithPlaceholder
+            src={post4}
+            alt=""
+            className="h-[150px] md:h-[180px] hover:scale-105 transition duration-200 ease-in"
+          />
+          <ImageWithPlaceholder
+            src={post5}
+            alt=""
+            className="h-[150px] md:h-[180px] hover:scale-105 transition duration-200 ease-in"
+          />
+          <ImageWithPlaceholder
+            src={post6}
+            alt=""
+            className="h-[150px] md:h-[180px] hover:scale-105 transition duration-200 ease-in"
+          />
+          {/* <img
             src={post1}
             alt="post-1"
-            className="max-w-full md:max-w-[calc(100%/6-13px)]"
+            className="max-w-full md:max-w-[calc(100%/6-13px)] hover:scale-105 transition duration-200 ease-in"
           />
           <img
             src={post2}
-            alt="post-1"
-            className="max-w-full md:max-w-[calc(100%/6-13px)]"
+            alt="post-2"
+            className="max-w-full md:max-w-[calc(100%/6-13px)] hover:scale-105 transition duration-200 ease-in"
           />
           <img
             src={post3}
-            alt="post-1"
-            className="max-w-full md:max-w-[calc(100%/6-13px)]"
+            alt="post-3"
+            className="max-w-full md:max-w-[calc(100%/6-13px)] hover:scale-105 transition duration-200 ease-in"
           />
           <img
             src={post4}
-            alt="post-1"
-            className="max-w-full md:max-w-[calc(100%/6-13px)]"
+            alt="post-4"
+            className="max-w-full md:max-w-[calc(100%/6-13px)] hover:scale-105 transition duration-200 ease-in"
           />
           <img
             src={post5}
-            alt="post-1"
-            className="max-w-full md:max-w-[calc(100%/6-13px)]"
+            alt="post-5"
+            className="max-w-full md:max-w-[calc(100%/6-13px)] hover:scale-105 transition duration-200 ease-in"
           />
           <img
             src={post6}
-            alt="post-1"
-            className="max-w-full md:max-w-[calc(100%/6-13px)]"
-          />
+            alt="post-6"
+            className="max-w-full md:max-w-[calc(100%/6-13px)] hover:scale-105 transition duration-200 ease-in"
+          /> */}
         </div>
       </div>
     </div>

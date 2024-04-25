@@ -4,6 +4,7 @@ import startYellowImg from "../../assets/images/star-yellow.svg";
 import banner from "../../assets/images/featured-products-banner.png";
 import { Product } from "../../types";
 import underline from "../../assets/images/underline.svg";
+import ImageWithPlaceholder from "../UI/ImageWithPlaceholder";
 
 const products: Product[] = [
   {
@@ -86,9 +87,11 @@ const FeaturedProducts: React.FC = () => {
         <FeaturedProductsSubSection title="Hot Deals" products={products} />
         <FeaturedProductsSubSection title="Best Seller" products={products} />
         <FeaturedProductsSubSection title="Top Rated" products={products} />
-        <div className="my-0 mx-auto hover:scale-105 transition duration-200 ease-in">
-          <img src={banner} alt="" />
-        </div>
+        <ImageWithPlaceholder
+          src={banner}
+          alt=""
+          className="my-0 mx-auto h-[300px] md:h-[375px] hover:scale-105 transition duration-200 ease-in"
+        />
       </section>
     </div>
   );
