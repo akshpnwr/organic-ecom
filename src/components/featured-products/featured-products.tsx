@@ -1,4 +1,4 @@
-import ProductCard from "./product-card";
+import ProductCard from "../product-card";
 import appleImg from "../../assets/images/products/apple.png";
 import startYellowImg from "../../assets/images/star-yellow.svg";
 import banner from "../../assets/images/featured-products-banner.png";
@@ -69,7 +69,7 @@ const FeaturedProductsSubSection: React.FC<{
 const FeaturedProducts: React.FC = () => {
   return (
     <div className="md:w-3/4 mt-12 md:mt-0 mx-auto">
-      <h1 className="font-bold text-center md:text-4xl text-zinc-900">
+      <h1 className="font-bold text-center text-2xl md:text-4xl text-zinc-900">
         Featured Products
       </h1>
       <img src={underline} className="m-auto" alt="" />

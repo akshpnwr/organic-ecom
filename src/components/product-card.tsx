@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import cartGray from "../../assets/images/add-to-cart.svg";
-import cartGreen from "../../assets/images/cart-green.svg";
+import cartGray from "../assets/images/add-to-cart.svg";
+import cartGreen from "../assets/images/cart-green.svg";
 
-import { Product } from "../../types";
+import { Product } from "../types";
 
 interface ProductCardProps {
   direction?: "horizontal" | "vertical";

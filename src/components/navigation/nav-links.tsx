@@ -1,5 +1,6 @@
 import React from "react";
 import cancelUrl from "../../assets/images/cancel.svg";
+import { Link } from "react-router-dom";
 
 interface NavLinksProps {
   isNavLinkVisible: boolean;
@@ -26,14 +27,26 @@ const NavLinks: React.FC<NavLinksProps> = ({
       )}
       <nav className="flex flex-col md:flex-row gap-5 md:justify-between w-full max-w-[1120px] max-md:flex-wrap max-md:max-w-full">
         <div className="flex flex-col md:flex-row gap-5 justify-between my-auto text-neutral-400 max-md:flex-wrap">
-          <div className="hover:text-white hover:cursor-pointer">Home</div>
-          <div className="hover:text-white hover:cursor-pointer">Shop</div>
+          <Link to="/" className="hover:text-white hover:cursor-pointer">
+            Home
+          </Link>
+          <Link to="/shop" className="hover:text-white hover:cursor-pointer">
+            Shop
+          </Link>
           <div className="hover:text-white hover:cursor-pointer">Pages</div>
           <div className="hover:text-white hover:cursor-pointer">Blog</div>
-          <div className="hover:text-white hover:cursor-pointer">About Us</div>
-          <div className="hover:text-white hover:cursor-pointer">
+          <Link
+            to="/about-us"
+            className="hover:text-white hover:cursor-pointer"
+          >
+            About Us
+          </Link>
+          <Link
+            to="/contact-us"
+            className="hover:text-white hover:cursor-pointer"
+          >
             Contact Us
-          </div>
+          </Link>
         </div>
         <div className="flex justify-center gap-2 text-white whitespace-nowrap">
           <img
