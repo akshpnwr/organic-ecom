@@ -1,6 +1,6 @@
 import ProductCard from "../product-card";
 import appleImg from "../../assets/images/products/apple.png";
-import startYellowImg from "../../assets/images/star-yellow.svg";
+import starYellowImg from "../../assets/images/star-yellow.svg";
 import banner from "../../assets/images/featured-products-banner.png";
 import { Product } from "../../types";
 import underline from "../../assets/images/underline.svg";
@@ -12,35 +12,35 @@ const products: Product[] = [
     name: "Green",
     price: "$14.99",
     imageUrl: appleImg,
-    ratingImageUrl: startYellowImg,
+    ratingImageUrl: starYellowImg,
   },
   {
     id: "2",
     name: "Red Apple",
     price: "$13.99",
     imageUrl: appleImg,
-    ratingImageUrl: startYellowImg,
+    ratingImageUrl: starYellowImg,
   },
   {
     id: "3",
     name: "Green",
     price: "$14.99",
     imageUrl: appleImg,
-    ratingImageUrl: startYellowImg,
+    ratingImageUrl: starYellowImg,
   },
   {
     id: "4",
     name: "Red Apple",
     price: "$13.99",
     imageUrl: appleImg,
-    ratingImageUrl: startYellowImg,
+    ratingImageUrl: starYellowImg,
   },
   {
     id: "5",
     name: "Red Apple",
     price: "$13.99",
     imageUrl: appleImg,
-    ratingImageUrl: startYellowImg,
+    ratingImageUrl: starYellowImg,
   },
 ];
 
