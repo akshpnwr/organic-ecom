@@ -33,8 +33,8 @@ const NavLinks: React.FC<NavLinksProps> = ({
           <Link to="/shop" className="hover:text-white hover:cursor-pointer">
             Shop
           </Link>
-          <div className="hover:text-white hover:cursor-pointer">Pages</div>
-          <div className="hover:text-white hover:cursor-pointer">Blog</div>
+          {/* <div className="hover:text-white hover:cursor-pointer">Pages</div> */}
+          {/* <div className="hover:text-white hover:cursor-pointer">Blog</div> */}
           <Link
             to="/about-us"
             className="hover:text-white hover:cursor-pointer"

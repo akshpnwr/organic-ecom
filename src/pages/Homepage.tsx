@@ -78,36 +78,6 @@ const Homepage: React.FC = () => {
             alt=""
             className="h-[150px] md:h-[180px] hover:scale-105 transition duration-200 ease-in"
           />
-          {/* <img
-            src={post1}
-            alt="post-1"
-            className="max-w-full md:max-w-[calc(100%/6-13px)] hover:scale-105 transition duration-200 ease-in"
-          />
-          <img
-            src={post2}
-            alt="post-2"
-            className="max-w-full md:max-w-[calc(100%/6-13px)] hover:scale-105 transition duration-200 ease-in"
-          />
-          <img
-            src={post3}
-            alt="post-3"
-            className="max-w-full md:max-w-[calc(100%/6-13px)] hover:scale-105 transition duration-200 ease-in"
-          />
-          <img
-            src={post4}
-            alt="post-4"
-            className="max-w-full md:max-w-[calc(100%/6-13px)] hover:scale-105 transition duration-200 ease-in"
-          />
-          <img
-            src={post5}
-            alt="post-5"
-            className="max-w-full md:max-w-[calc(100%/6-13px)] hover:scale-105 transition duration-200 ease-in"
-          />
-          <img
-            src={post6}
-            alt="post-6"
-            className="max-w-full md:max-w-[calc(100%/6-13px)] hover:scale-105 transition duration-200 ease-in"
-          /> */}
         </div>
       </div>
     </div>

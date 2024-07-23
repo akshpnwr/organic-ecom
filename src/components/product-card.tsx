@@ -3,6 +3,7 @@ import cartGray from "../assets/images/add-to-cart.svg";
 import cartGreen from "../assets/images/cart-green.svg";
 
 import { Product } from "../types";
+import { Link } from "react-router-dom";
 
 interface ProductCardProps {
   direction?: "horizontal" | "vertical";
@@ -13,7 +14,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, direction }) => {
   const [isHovering, setIsHovering] = useState(false);
 
   return (
-    <article
+    <Link
+      to="/product"
       className={`flex ${
         direction == "vertical" ? "flex-row" : "flex-col"
       } whitespace-nowrap p-1 bg-white rounded-lg border border-solid border-neutral-200 cursor-pointer leading-[150%] md:max-w-[248px] hover:border-1 hover:border-green-400 hover:shadow-sm hover:shadow-green-500`}
@@ -69,7 +71,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, direction }) => {
           </div>
         )}
       </div>
-    </article>
+    </Link>
   );
 };
 

@@ -26,7 +26,10 @@ export const Hero: React.FC = () => {
                   Free shipping on all your order. we deliver, you enjoy
                 </p>
                 {/* <button className="flex gap-4 justify-center px-5 py-3 mt-6 md:mt-8 text-base leading-5 text-white bg-green-600 rounded-[53px] md:px-10 md:py-5"> */}
-                <Button text="Shop now" classes="flex gap-4 justify-center">
+                <Button
+                  text="Shop now"
+                  classes="flex gap-4 justify-center hover:bg-green-700 hover:scale-95"
+                >
                   <img
                     src={rightArrow}
                     alt="Arrow Right"

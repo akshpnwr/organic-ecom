@@ -5,6 +5,7 @@ import { useState } from "react";
 import appleImg from "../assets/images/products/apple.png";
 import starYellowImg from "../assets/images/star-yellow.svg";
 import "../assets/styles/pagination.css";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const products: Product[] = [
   {
@@ -148,16 +149,16 @@ const PaginatedItems: React.FC<PaginatedItemsProps> = ({ itemsPerPage }) => {
 
   return (
     <>
-      <div className="grid grid-cols-4 gap-2 md:gap-10">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-10">
         <Products currentProducts={currentProducts} />
       </div>
       <ReactPaginate
         breakLabel="..."
-        nextLabel=">"
         onPageChange={handlePageClick}
         pageRangeDisplayed={3}
         pageCount={pageCount}
-        previousLabel="<"
+        previousLabel={<ChevronLeft strokeWidth="1.5px" />}
+        nextLabel={<ChevronRight strokeWidth="1.5px" />}
         renderOnZeroPageCount={null}
         className="flex w-full gap-2 justify-center mt-10 pagination"
       />
