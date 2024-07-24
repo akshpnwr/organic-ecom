@@ -2,7 +2,7 @@ import React from "react";
 import heroImage from "../../assets/images/hero-image.png";
 import rightArrow from "../../assets/images/right-arrow.svg";
 import FeatureSection from "./featured-section";
-import Button from "../UI/Button";
+import Button from "../UI/ButtonCustom";
 
 export const Hero: React.FC = () => {
   return (

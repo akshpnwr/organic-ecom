@@ -1,8 +1,8 @@
 import * as React from "react";
 import logo from "../../assets/images/logo.svg";
 import search from "../../assets/images/search.svg";
-import heart from "../../assets/images/heart.svg";
-import cart from "../../assets/images/cart.svg";
+import { Heart, ShoppingCart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface ImageProps {
   src: string;
@@ -85,10 +85,12 @@ const Middle: React.FC<MiddleProps> = ({ setShowNavLinks }) => (
       </button>
     </div>
     <SearchArea placeholder="Search" />
-    <div className="flex justify-between md:self-stretch my-auto">
-      <Image src={heart} alt="Icon description" customClass="mr-3" />
-      <div className="flex gap-3 pl-3 border-l-2">
-        <Image src={cart} alt="Shopping cart" />
+    <div className="flex items-center justify-between md:self-stretch my-auto">
+      <Heart strokeWidth="1.4px" className="w-7 h-w-7 mr-3" />
+      <div className="flex items-center gap-3 pl-3 border-l-2">
+        <Link to="/cart">
+          <ShoppingCart strokeWidth="1.4px" className="w-7 h-w-7" />
+        </Link>
         <div className="flex-col flex-1">
           <div className="text-xs leading-3 text-neutral-600">
             {" "}

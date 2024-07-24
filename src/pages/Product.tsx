@@ -1,5 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/UI/avatar";
-import Button from "@/components/UI/Button";
+import Button from "@/components/UI/ButtonCustom";
 import { Separator } from "@/components/UI/separator";
 import appleImg1 from "../assets/images/products/apple-1.jpg";
 import appleImg2 from "../assets/images/products/apple-2.jpg";

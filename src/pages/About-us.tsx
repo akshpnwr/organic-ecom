@@ -5,7 +5,7 @@ import teamMember1 from "../assets/images/about-us/team-member-1.png";
 
 import Testimonial from "../components/testimonial";
 import Slider from "../components/slider";
-import Button from "../components/UI/Button";
+import Button from "../components/UI/ButtonCustom";
 
 interface BenefitProps {
   iconSrc: string;
