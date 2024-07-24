@@ -1,12 +1,11 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/UI/avatar";
-import Button from "@/components/UI/ButtonCustom";
 import { Separator } from "@/components/UI/separator";
 import appleImg1 from "../assets/images/products/apple-1.jpg";
 import appleImg2 from "../assets/images/products/apple-2.jpg";
-
 import { Star } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/UI/tabs";
 import { useState } from "react";
+import ButtonCustom from "@/components/UI/ButtonCustom";
 
 export default function Product() {
   const [selectedImg, setSelectedImg] = useState(appleImg1);
@@ -142,10 +141,10 @@ export default function Product() {
               </p>
             </div>
           </div>
-          <Button
+          <ButtonCustom
             text="Add to Cart"
             classes="text-xl font-medium hover:bg-green-700"
-          ></Button>
+          ></ButtonCustom>
           <Separator className="my-4" />
           <div className="grid gap-4">
             <h2 className="font-bold text-2xl">Product Details</h2>

@@ -4,7 +4,7 @@ interface ButtonProps {
   classes?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ text, children, classes }) => {
+const ButtonCustom: React.FC<ButtonProps> = ({ text, children, classes }) => {
   return (
     <button
       className={`px-5 py-3 mt-6 md:mt-8 text-base leading-5 text-white bg-green-600 rounded-[53px] md:px-10 md:py-5 ${classes}`}
@@ -15,4 +15,4 @@ const Button: React.FC<ButtonProps> = ({ text, children, classes }) => {
   );
 };
 
-export default Button;
+export default ButtonCustom;

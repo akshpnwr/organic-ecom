@@ -5,7 +5,7 @@ import teamMember1 from "../assets/images/about-us/team-member-1.png";
 
 import Testimonial from "../components/testimonial";
 import Slider from "../components/slider";
-import Button from "../components/UI/ButtonCustom";
+import ButtonCustom from "../components/UI/ButtonCustom";
 
 interface BenefitProps {
   iconSrc: string;
@@ -209,14 +209,14 @@ const AboutUs = () => {
               </div>
             </div>
 
-            <Button text="Shop Now" classes="flex gap-4 self-start">
+            <ButtonCustom text="Shop Now" classes="flex gap-4 self-start">
               <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/4479b5fcd8806024af03a919fdc52e70085f0c2c8f9acab5119fdbdc61350308?apiKey=bbddd5bf435648a288c40d6f8ca6b85c&"
                 alt=""
                 className="shrink-0 my-auto aspect-[1.15] w-[15px]"
               />
-            </Button>
+            </ButtonCustom>
           </section>
         </div>
         <div className="flex flex-col w-[55%] max-md:ml-0 max-md:w-full">
