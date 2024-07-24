@@ -1,7 +1,7 @@
-import { Button } from "./UI/button";
 import { Minus, Plus, Trash } from "lucide-react";
 import appleImg from "../assets/images/products/apple.png";
 import { useState } from "react";
+import { Button } from "@/components/UI/button";
 
 const CartItem = () => {
   const [quantity, setQuantity] = useState(1);
