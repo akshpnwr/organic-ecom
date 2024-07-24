@@ -1,31 +1,48 @@
 import React from "react";
 import Feature from "./feature";
-import deliveryTruck from "../../assets/images/delivery-truck.svg";
-import payment from "../../assets/images/package.svg";
-import headphones from "../../assets/images/headphones.svg";
-import shoppingBag from "../../assets/images/shopping-bag.svg";
+import { Headphones, Package, ShoppingBag, Truck } from "lucide-react";
 
 const features = [
   {
-    src: deliveryTruck,
+    icon: (
+      <Truck
+        strokeWidth="1px"
+        className="w-12 h-12 group-hover:scale-125 group-hover:text-white text-green-600"
+      />
+    ),
     alt: "Free Shipping Icon",
     title: "Free Shipping",
     description: "Free shipping on all your orders",
   },
   {
-    src: headphones,
+    icon: (
+      <Headphones
+        strokeWidth="1px"
+        className="w-12 h-12 group-hover:scale-125 group-hover:text-white text-green-600"
+      />
+    ),
     alt: "Customer Support Icon",
     title: "Customer Support 24/7",
     description: "Instant access to Support",
   },
   {
-    src: payment,
+    icon: (
+      <Package
+        strokeWidth="1px"
+        className="w-12 h-12 group-hover:scale-125 group-hover:text-white text-green-600"
+      />
+    ),
     alt: "Secure Payment Icon",
     title: "100% Secure Payment",
     description: "We ensure your money is safe",
   },
   {
-    src: shoppingBag,
+    icon: (
+      <ShoppingBag
+        strokeWidth="1px"
+        className="w-12 h-12 group-hover:scale-125 group-hover:text-white text-green-600"
+      />
+    ),
     alt: "Money-Back Guarantee Icon",
     title: "Money-Back Guarantee",
     description: "30 Days Money-Back Guarantee",
@@ -33,12 +50,12 @@ const features = [
 ];
 
 const FeatureSection: React.FC = () => (
-  <section className="md:w-3/4 md:mx-auto md:relative md:bottom-16 justify-between pb-10 md:p-10 bg-white rounded-md shadow-2xl max-md:px-5">
-    <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+  <section className="max-w-6xl mx-auto md:relative md:bottom-16 justify-between bg-white rounded-md shadow-2xl">
+    <div className="flex max-md:flex-col max-md:gap-0">
       {features.map((feature, index) => (
         <Feature
           key={index}
-          src={feature.src}
+          icon={feature.icon as JSX.Element}
           alt={feature.alt}
           title={feature.title}
           description={feature.description}
